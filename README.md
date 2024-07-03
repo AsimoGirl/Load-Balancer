@@ -1,24 +1,23 @@
-# ProyectoSistemasDistribuidos
-Implementaciones de balanceadores de carga con diversos algoritmos
+# Load Balancer For Distributed Systems
+Load balancer implementations with various algorithms
 
-Para poder compilar el código se debe tener instalado MPI
+In order to compile the code you must have MPI installed
 
-Se compila con el comando 
+It is compiled with the command
 ```c
-mpicc <nombre_archivo>.c -o <nombre_archivo>
+mpicc <file_name>.c -o <file_name>
 ```
 
-Y se ejecuta con el comando
+And it is executed with the command
 ```c
-mpirun -n <numero_procesos> <nombre_archivo>
+mpirun -n <number_processes> <file_name>
 ```
 
-El archivo load_balancing_least.c corresponde a la implementación del algoritmo de conexiones mínimas.
+The file load_balancing_least.c corresponds to the implementation of the least connections algorithm.
 
-El archivo load_balancing_random.c corresponde a la implementación del algoritmo aleatorio.
+The file load_balancing_random.c corresponds to the implementation of the random algorithm.
 
-El archivo load_balancing_rr_pure.c corresponde a la implementación del algoritmo de round robin.
+The file load_balancing_rr_pure.c corresponds to the implementation of the round robin algorithm.
 
-Los archivos load_balancing_rr_list1.c y load_balancing_rr_wait1.c corresponden a versiones editadas del algoritmo de round robin, estas versiones fueron mucho más lentas que el round robin orignal así que no se consideraron en el documento final.
-
+The files load_balancing_rr_list1.c and load_balancing_rr_wait1.c correspond to edited versions of the round robin algorithm, these versions were much slower than the original round robin so they were not considered in the final document.
 
